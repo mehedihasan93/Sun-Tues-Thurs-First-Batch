@@ -23,7 +23,7 @@ class _BottonColumnState extends State<BottonColumn> {
           IconButton(
             icon: Icon(Icons.close),
             onPressed: () {},
-          )
+          ),
         ],
       ),
       body: Align(
@@ -34,20 +34,27 @@ class _BottonColumnState extends State<BottonColumn> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text("Name : Mehedi Hasan"),
-              Text("Address : 44/65, Islamia College Road, Boyra, Khulna"),
-              Text("Place : khulna"),
-              Text("Position : Student"),
-              Text("Posting : 7Rastar mor"),
-              Text("Total Salary : ${30000 + 6000 + 4500 + 6789.89 + 456.678}"),
-            ],
-          ),
-          child: Column(
-            children: [
               Container(
-                height: 300,
+                  height: 260,
+                  width: 400,
+                  decoration: BoxDecoration(color: Colors.amberAccent),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Text("Name : Mehedi Hasan"),
+                      Text(
+                          "Address : 44/65, Islamia College Road, Boyra, Khulna"),
+                      Text("Place : khulna"),
+                      Text("Position : Student"),
+                      Text("Posting : 7Rastar mor"),
+                      Text(
+                          "Total Salary : ${30000 + 6000 + 4500 + 6789.89 + 456.678}"),
+                    ],
+                  )),
+              Container(
+                height: 161,
                 width: 400,
-                decoration: BoxDecoration(color: Colors.amberAccent),
+                decoration: BoxDecoration(color: Colors.blueGrey),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -61,7 +68,7 @@ class _BottonColumnState extends State<BottonColumn> {
                 ),
               ),
               Container(
-                height: 130,
+                height: 142,
                 width: 400,
                 decoration: BoxDecoration(color: Colors.green),
                 child: Row(
@@ -70,8 +77,8 @@ class _BottonColumnState extends State<BottonColumn> {
                     FlatButton(
                       onPressed: () {},
                       child: Container(
-                        height: 25,
-                        width: 60,
+                        height: 40,
+                        width: 70,
                         decoration: BoxDecoration(
                             color: Colors.red,
                             borderRadius: BorderRadius.circular(25)),
@@ -83,10 +90,10 @@ class _BottonColumnState extends State<BottonColumn> {
                     FlatButton(
                       onPressed: () {},
                       child: Container(
-                        height: 25,
+                        height: 50,
                         width: 170,
                         decoration: BoxDecoration(
-                            color: Colors.blue,
+                            color: Colors.deepPurpleAccent,
                             borderRadius: BorderRadius.circular(25)),
                         child: Center(
                           child: Text("Go to Registration Page"),
