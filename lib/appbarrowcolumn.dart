@@ -61,7 +61,7 @@ class _AppbarRowColumnState extends State<AppbarRowColumn> {
             borderRadius: BorderRadius.circular(30),
           ),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
                 height: 90,
@@ -73,16 +73,113 @@ class _AppbarRowColumnState extends State<AppbarRowColumn> {
                   size: 70,
                 ),
               ),
-              Padding(padding: EdgeInsets.only(top: 05)),
-              Text(
-                "Profile Update",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontStyle: FontStyle.normal,
-                  fontSize: 18,
-                  color: Colors.black,
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  FlatButton(
+                    onPressed: () {},
+                    child: Container(
+                      height: 40,
+                      width: 115,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Icon(
+                            Icons.create,
+                            size: 20,
+                            color: Colors.black87,
+                          ),
+                          Text(
+                            "Edit Profile",
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w800,
+                              color: Colors.black87,
+                              fontStyle: FontStyle.italic,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  FlatButton(
+                    onPressed: () {},
+                    child: Container(
+                      height: 40,
+                      width: 115,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
+                          color: Colors.black87,
+                          width: 3,
+                          style: BorderStyle.solid,
+                        ),
+                        color: Colors.grey,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Icon(
+                            Icons.person_add_alt_1_rounded,
+                            size: 20,
+                            color: Colors.black87,
+                          ),
+                          Text(
+                            "Fllowing",
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w800,
+                              color: Colors.black87,
+                              fontStyle: FontStyle.italic,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
               ),
+              Container(
+                height: 115,
+                width: 280,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Text(
+                      "Md. Mehedi Hasan",
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.black87,
+                      ),
+                    ),
+                    Text(
+                      "@mehedihasan93",
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.purple,
+                        fontWeight: FontWeight.w900,
+                        fontStyle: FontStyle.italic,
+                      ),
+                    ),
+                    Text(
+                      "I am Flutter Developer & Graphic Designer",
+                      style: TextStyle(
+                        fontSize: 13,
+                        color: Colors.brown,
+                        fontWeight: FontWeight.w900,
+                        fontStyle: FontStyle.italic,
+                      ),
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ),
